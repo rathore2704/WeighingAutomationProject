@@ -15,23 +15,84 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid title">
+            <a class="navbar-brand title"
+               href="#">
+                <h1>setting Section To Set Entries And Other Parameters</h1>
+            </a>
+        </div>
+    </nav>
     <div class="my-4 mx-4">
         <div class="my-4">
             <input type="submit"
                    value="Set Header"
-                   id="header">
+                   name="hfpEntries"
+                   onclick="hfpEntries()"
+                   id="headerBtn">
         </div>
         <div class="my-4">
             <input type="submit"
                    value="Set Footer"
-                   id="footer">
+                   name="hfpEntries"
+                   onclick="hfpEntries()"
+                   id="footerBtn">
         </div>
         <div class="my-4">
             <input type="submit"
                    value="Set Production Entries"
-                   id="production-entries">
+                   name="hfpEntries"
+                   onclick="hfpEntries()"
+                   id="productionEntriesBtn">
+        </div>
+        <div class="my-4">
+            <input type="submit"
+                   value="Back"
+                   name="hfpBack"
+                   id="hfpBackBtn">
         </div>
     </div>
+
+    <script>
+
+        let headerBtn = document.getElementById("headerBtn");
+        headerBtn.addEventListener('click',()=>{
+            window.location.replace('header.html');
+            return true;
+        })
+
+        let footerBtn = document.getElementById("footerBtn");
+        footerBtn.addEventListener('click',()=>{
+            window.location.replace('footer.html');
+            return true;
+        })
+
+        let productionEntriesBtn = document.getElementById("productionEntriesBtn");
+        productionEntriesBtn.addEventListener('click',()=>{
+            window.location.replace('setProdEntries.html');
+            return true;
+        })
+
+        let hfpBackBtn = document.getElementById('hfpBackBtn');
+        hfpBackBtn.addEventListener('click', ()=>{
+            window.location.replace('adminPortal.html')
+        })
+
+        
+        //  function opap() {
+        //                                 let selectValue = document.querySelector('input[name = operatorAdminPanel]:checked').value;
+        //                                 console.log(`Selected Value ${selectValue}`);
+        //                                 if (selectValue === "operatorPortal") {
+        //                                         window.location.replace("operPort.html");
+        //                                         return true;
+        //                                 }
+        //                                 else if (selectValue === "adminPortal") {
+        //                                         window.location.replace("password.html");
+        //                                         return true;
+        //                                 }
+        //                                 return false;
+        //                         }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
             crossorigin="anonymous"></script>

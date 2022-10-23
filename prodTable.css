@@ -1,0 +1,18 @@
+.table{
+    background-color: beige;
+    padding: auto;
+    margin-top: auto;
+    vertical-align: auto;
+    width: 80em;
+    height: max-content;
+    align-self: center;
+    align-items: flex-end;
+    padding: 3px;
+}
+input{
+    border-radius: .3em;
+}
+.weight-screen{
+    width: auto;
+    height: 4em;
+}

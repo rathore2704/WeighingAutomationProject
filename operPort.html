@@ -16,6 +16,14 @@
 <!-- Operator portal -->
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid title">
+            <a class="navbar-brand title"
+               href="#">
+                <h1>WELCOME TO MP&AD ENTERPRISES</h1>
+            </a>
+        </div>
+    </nav>
     <div class="mx-3 my-3">
         <label action="# "> Operator Name:
             <select name="operator-name"
@@ -27,13 +35,32 @@
                 <option value="operator-2">operator-2</option>
                 <option value="operator-3">operator-3</option>
             </select>
-            <input type="submit"
-                   value="Continue"
-                   id="operator-button">
+
+            <div class="my-3">
+                <input type="submit"
+                       value="Continue"
+                       id="operContBtn">
+
+                <input type="submit"
+                       value="Back"
+                       id="opBackBtn">
+            </div>
 
         </label>
     </div>
 
+    <script>
+        let operContBtn = document.getElementById('operContBtn');
+        operContBtn.addEventListener('click', () => {
+            window.location.replace('bslc.html')
+        })
+
+        let opBackBtn = document.getElementById('opBackBtn');
+        opBackBtn.addEventListener('click', () => {
+            window.location.replace('opap.html')
+        })
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
             crossorigin="anonymous"></script>

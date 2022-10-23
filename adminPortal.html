@@ -12,9 +12,30 @@
           rel="stylesheet"
           integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
           crossorigin="anonymous">
+    <style>
+        .table {
+            background-color: beige;
+            padding: auto;
+            margin-top: auto;
+            vertical-align: auto;
+            width: 80em;
+            height: max-content;
+            align-self: center;
+            align-items: flex-end;
+            padding: 3px;
+        }
+    </style>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid title">
+            <a class="navbar-brand title"
+               href="#">
+                <h1>MP&AD ENTERPRISES</h1>
+            </a>
+        </div>
+    </nav>
     <div class="container-ad-po mx-2">
         <div class="mx-3 my-3">
             <div>
@@ -22,7 +43,7 @@
             </div>
             <!-- production sheet table screen monitoring via admin computer on company server -->
             <div>
-                <table class="table">
+                <table class="table table-success table-striped">
                     <thead>
                         <tr>
                             <th scope="col">S.No</th>
@@ -57,14 +78,36 @@
         <div class="my-3">
             <input type="submit"
                    value="Setting"
-                   id="setting">
+                   id="adminPortalsetting">
         </div>
         <div class="my-3">
             <input type="submit"
                    value="Correction"
-                   id="correction">
+                   id="correctionBtn">
+        </div>
+        <div class="my-3">
+            <input type="submit"
+                   value="Back"
+                   id="apBackBtn">
         </div>
     </div>
+    <script>
+        let apBackBtn = document.getElementById('apBackBtn');
+        apBackBtn.addEventListener('click', () => {
+            window.location.replace('opap.html')
+        })
+
+        let adminPortalsetting = document.getElementById('adminPortalsetting');
+        adminPortalsetting.addEventListener('click', () => {
+            window.location.replace('setting.html')
+        })
+        let correctionBtn = document.getElementById('correctionBtn');
+        correctionBtn.addEventListener('click', () => {
+            window.location.replace('correction.html')
+        })
+
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
             crossorigin="anonymous"></script>

@@ -1,105 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
     <title>Correction</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-    crossorigin="anonymous">
+          rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+          crossorigin="anonymous">
     <style>
-       
-        .container{
+        .container {
             background-color: beige;
-            padding: auto; 
+            padding: auto;
             vertical-align: auto;
             width: fit-content;
             align-self: center;
-
-        }
-        .correction{
             align-items: flex-end;
             padding: 3px;
+
         }
+
+        
     </style>
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid title">
+            <a class="navbar-brand title"
+               href="#">
+                <h1>WELCOME TO MP&AD ENTERPRISES</h1>
+            </a>
+        </div>
+    </nav>
     <!-- If the operator forget in clicking the reject button. Need to correct the rejected entry
     in the production table. Then by entering the Unique Batch Id number, the detailing of the 
     tank can be obtained and can make the correction-->
     <div class="my-3 container">
-        Enter UBIN <input type="text" name="correction-ubin" id="correction-ubin">
-        <input type="submit" value="Submit" id="correction-btn-submit">
+        Enter UBIN <input type="text"
+               name="correction-ubin"
+               id="correction-ubin">
+        <input type="submit"
+               value="Submit"
+               id="correction-btn-submit">
     </div>
     <div class="my-5 container">
         <table class="table">
             <tbody>
                 <tr>
                     <th scope="row">Date/Time:</th>
-                    <td><input type="text" id="correction-date-time"></td>
+                    <td><input type="text"
+                               id="correction-date-time"></td>
                 </tr>
                 <tr>
                     <th scope="row"> Operator Nmae:</th>
-                    <td><input type="text" id="correction-operator-name"></td>
+                    <td><input type="text"
+                               id="correction-operator-name"></td>
                 </tr>
                 <tr>
                     <th scope="row">Tank Weight:</th>
-                    <td><input type="text" id="correction-tank-weight"></td>
+                    <td><input type="text"
+                               id="correction-tank-weight"></td>
                 </tr>
                 <tr>
                     <th scope="row">Brand:</th>
-                    <td><input type="text" id="correction-brand"></td>
+                    <td><input type="text"
+                               id="correction-brand"></td>
                 </tr>
                 <tr>
                     <th scope="row">Size:</th>
-                    <td><input type="text" id="correction-size"></td>
+                    <td><input type="text"
+                               id="correction-size"></td>
                 </tr>
                 <tr>
                     <th scope="row">Layer:</th>
-                    <td><input type="text" id="correction-layer"></td>
+                    <td><input type="text"
+                               id="correction-layer"></td>
                 </tr>
                 <tr>
                     <th scope="row">Color:</th>
-                    <td><input type="text" id="correction-color"></td>
+                    <td><input type="text"
+                               id="correction-color"></td>
                 </tr>
             </tbody>
         </table>
-    </div>
-    <!-- <div class="container">
-        <div class="my-4">
-            <div for="" class="correction">
-                Date/Time : <input type="text" id="corretion-date-time">
-            </div>
-            <div for="" class="correction">
-                Operator Nmae : <input type="text" id="corretion-operator-name">
-            </div>
-            <div for="" class="correction">
-                Tank Weight : <input type="text" id="corretion-tank-weight">
-            </div>
-            <div for="" class="correction">
-                Brand : <input type="text" id="corretion-brand">
-            </div>
-            <div for="" class="correction">
-                Size : <input type="text" id="corretion-size">
-            </div>
-            <div for="" class="correction">
-                Layer : <input type="text" id="corretion-layer">
-            </div>
-            <div for="" class="correction">
-                Color : <input type="text" id="corretion-color">
-            </div>
+
+        <div class="my-3">
+            <input type="submit"
+                   value="Back"
+                   id="correctionBackBtn">
         </div>
-    </div> -->
+    </div>
+   <script src="correction.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-    crossorigin="anonymous"></script>
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+            crossorigin="anonymous"></script>
 </body>
+
 </html>

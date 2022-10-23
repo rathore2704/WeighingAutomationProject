@@ -12,77 +12,89 @@
           rel="stylesheet"
           integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
           crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="prodTable.css">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid title">
+            <a class="navbar-brand title"
+               href="#">
+                <h1>WELCOME TO MP&AD ENTERPRISES</h1>
+            </a>
+        </div>
+    </nav>
     <div class="container my-3">
         <div class="weight-container">
-            <div class="weightScreen">
-                <label for="RealTimeweightScreen">
-                    <input type="text"
-                           name="weight-screen"
-                           id="weight-screen"
-                           class="weight-screen"
-                           placeholder="Tank Weight in Kg Screen">
-                </label>
+            <label for="RealTimeweightScreen"
+                   class="weightScreen">
+                <input type="text"
+                       name="weight-screen"
+                       id="weight-screen"
+                       class="weight-screen"
+                       placeholder="Tank Weight in Kg Screen">
+            </label>
 
-                <!-- Add button will turn Green every time whenb the weight get added and fed in the production table -->
-                <button class="addBtn"
-                        id="addBtn">ADD</button>
+            <!-- Add button will turn Green every time whenb the weight get added and fed in the production table -->
+            <button class="addBtn"
+                    id="ptAddBtn">ADD</button>
 
-                <!-- By clicking on the Reject Button, The entries will turn red in the production table -->
-                <button class="reject"
-                        id="reject">Reject</button>
+            <!-- By clicking on the Reject Button, The entries will turn red in the production table -->
+            <button class="reject"
+                    id="ptReject">Reject</button>
 
+            <button id="ptBackBtn">BACK</button>
 
-                <button id="backBtn">BACK</button>
-
-
-                <button id="finishBtn">Finish</button>
-            </div>
+            <button id="ptFinishBtn">Finish</button>
         </div>
+
 
         <div class="my-3">
             <div>
-                <div>
+                <div >
                     <input type="text"
                            name=""
                            id="print-op-name"
-                           placeholder="Operator Name">
+                           placeholder="Operator Name" disabled>
                     <input type="text"
                            name=""
                            id="print-op-shift"
-                           placeholder="Shift">
+                           placeholder="Shift" disabled>
                     <input type="text"
                            name=""
                            id="print-date"
-                           placeholder="Date">
+                           placeholder="Date" disabled>
                     <input type="text"
                            name=""
                            id="print-time"
-                           placeholder="Time">
+                           placeholder="Time" disabled>
                 </div>
-                <div>
+                <div class="my-2">
                     <input type="text"
                            name=""
                            id="print-brand"
-                           placeholder="Brand">
+                           placeholder="Brand" disabled>
                     <input type="text"
                            name=""
                            id="print-size"
-                           placeholder="Size">
+                           placeholder="Size"disabled>
                     <input type="text"
                            name=""
                            id="print-layer"
-                           placeholder="Layer">
+                           placeholder="Layer" disabled>
                     <input type="text"
                            name=""
                            id="print-color"
-                           placeholder="Colour">
+                           placeholder="Colour" disabled>
                 </div>
             </div>
-            <div class="container-table">
-                <table class="table">
+            
+            <div class="containerTable"
+                 id="productionTable">
+                <br>
+                <table class="table table-success table-striped">
+                    
                     <thead>
                         <tr>
                             <th scope="col">S.No</th>
@@ -116,6 +128,7 @@
 
         </div>
     </div>
+    <script src="prodTable.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
