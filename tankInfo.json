@@ -1,10 +1,10 @@
 {
-	"product": [{
+	"product": {
 		"tank": {
 			"brand": ["brand1", "brand2"],
 			"size": ["size1", "size2", "size3"],
 			"layer": [2],
 			"color": ["blue", "black","red"]
 		}
-	}]
+	}
 }
