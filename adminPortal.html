@@ -36,61 +36,63 @@
             </a>
         </div>
     </nav>
-    <div class="container-ad-po mx-2">
-        <div class="mx-3 my-3">
-            <div>
-                <h1>Welcome To Admin Portal</h1>
+    <center>
+        <div class="container-ad-po mx-2">
+            <div class="mx-3 my-3">
+                <div>
+                    <h1>Welcome To Admin Portal</h1>
+                </div>
+                <!-- production sheet table screen monitoring via admin computer on company server -->
+                <div>
+                    <table border="2" class="table table-success table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">UBIN</th>
+                                <th scope="col">Tank Weight</th>
+                                <th scope="col">Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <!-- production sheet table screen monitoring via admin computer on company server -->
-            <div>
-                <table class="table table-success table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">UBIN</th>
-                            <th scope="col">Tank Weight</th>
-                            <th scope="col">Time</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="my-3">
+                <input type="submit"
+                       value="Setting"
+                       id="adminPortalsetting">
+            </div>
+            <div class="my-3">
+                <input type="submit"
+                       value="Correction"
+                       id="correctionBtn">
+            </div>
+            <div class="my-3">
+                <input type="submit"
+                       value="Back"
+                       id="apBackBtn">
             </div>
         </div>
-        <div class="my-3">
-            <input type="submit"
-                   value="Setting"
-                   id="adminPortalsetting">
-        </div>
-        <div class="my-3">
-            <input type="submit"
-                   value="Correction"
-                   id="correctionBtn">
-        </div>
-        <div class="my-3">
-            <input type="submit"
-                   value="Back"
-                   id="apBackBtn">
-        </div>
-    </div>
+    </center>
     <script>
         let apBackBtn = document.getElementById('apBackBtn');
         apBackBtn.addEventListener('click', () => {

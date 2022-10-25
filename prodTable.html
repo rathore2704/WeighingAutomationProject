@@ -25,109 +25,119 @@
             </a>
         </div>
     </nav>
-    <div class="container my-3">
-        <div class="weight-container">
-            <label for="RealTimeweightScreen"
-                   class="weightScreen">
-                <input type="text"
-                       name="weight-screen"
-                       id="weight-screen"
-                       class="weight-screen"
-                       placeholder="Tank Weight in Kg Screen">
-            </label>
+    <center>
+        <div class="container my-3">
+            <div class="weight-container">
+                <label for="RealTimeweightScreen"
+                       class="weightScreen">
+                    <input type="text"
+                           name="weight-screen"
+                           id="weight-screen"
+                           class="weight-screen"
+                           placeholder="Tank Weight in Kg Screen">
+                </label>
 
-            <!-- Add button will turn Green every time whenb the weight get added and fed in the production table -->
-            <button class="addBtn"
-                    id="ptAddBtn">ADD</button>
+                <!-- Add button will turn Green every time whenb the weight get added and fed in the production table -->
+                <button class="addBtn"
+                        id="ptAddBtn">ADD</button>
 
-            <!-- By clicking on the Reject Button, The entries will turn red in the production table -->
-            <button class="reject"
-                    id="ptReject">Reject</button>
+                <!-- By clicking on the Reject Button, The entries will turn red in the production table -->
+                <button class="reject"
+                        id="ptReject">Reject</button>
 
-            <button id="ptBackBtn">BACK</button>
+                <button id="ptBackBtn">BACK</button>
 
-            <button id="ptFinishBtn">Finish</button>
-        </div>
-
-
-        <div class="my-3">
-            <div>
-                <div >
-                    <input type="text"
-                           name=""
-                           id="print-op-name"
-                           placeholder="Operator Name" disabled>
-                    <input type="text"
-                           name=""
-                           id="print-op-shift"
-                           placeholder="Shift" disabled>
-                    <input type="text"
-                           name=""
-                           id="print-date"
-                           placeholder="Date" disabled>
-                    <input type="text"
-                           name=""
-                           id="print-time"
-                           placeholder="Time" disabled>
-                </div>
-                <div class="my-2">
-                    <input type="text"
-                           name=""
-                           id="print-brand"
-                           placeholder="Brand" disabled>
-                    <input type="text"
-                           name=""
-                           id="print-size"
-                           placeholder="Size"disabled>
-                    <input type="text"
-                           name=""
-                           id="print-layer"
-                           placeholder="Layer" disabled>
-                    <input type="text"
-                           name=""
-                           id="print-color"
-                           placeholder="Colour" disabled>
-                </div>
-            </div>
-            
-            <div class="containerTable"
-                 id="productionTable">
-                <br>
-                <table class="table table-success table-striped">
-                    
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">UBIN</th>
-                            <th scope="col">Tank Weight</th>
-                            <th scope="col">Time</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <button id="ptFinishBtn">Finish</button>
             </div>
 
+
+            <div class="my-3">
+                <div>
+                    <div>
+                        <input type="text"
+                               name=""
+                               id="print-op-name"
+                               placeholder="Operator Name"
+                               disabled>
+                        <input type="text"
+                               name=""
+                               id="print-op-shift"
+                               placeholder="Shift"
+                               disabled>
+                        <input type="text"
+                               name=""
+                               id="print-date"
+                               placeholder="Date"
+                               disabled>
+                        <input type="text"
+                               name=""
+                               id="print-time"
+                               placeholder="Time"
+                               disabled>
+                    </div>
+                    <div class="my-2">
+                        <input type="text"
+                               name=""
+                               id="print-brand"
+                               placeholder="Brand"
+                               disabled>
+                        <input type="text"
+                               name=""
+                               id="print-size"
+                               placeholder="Size"
+                               disabled>
+                        <input type="text"
+                               name=""
+                               id="print-layer"
+                               placeholder="Layer"
+                               disabled>
+                        <input type="text"
+                               name=""
+                               id="print-color"
+                               placeholder="Colour"
+                               disabled>
+                    </div>
+                </div>
+
+                <div class="containerTable"
+                     id="productionTable">
+                    <br>
+                    <table border="2" class="table table-success table-striped">
+
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">UBIN</th>
+                                <th scope="col">Tank Weight</th>
+                                <th scope="col">Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
         </div>
-    </div>
+    </center>
     <script src="prodTable.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
