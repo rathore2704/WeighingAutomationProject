@@ -342,3 +342,22 @@ let setProdEntriesBackBtn = document.getElementById('setProdEntriesBackBtn');
 setProdEntriesBackBtn.addEventListener('click', ()=>{
    window.location.replace('setting.html')
 })
+
+let listBrand = [];
+let n = 1;
+let x = 0;
+
+function AddBrandList(){
+  let AddBrandList = document.getElementById("saveBrand");
+  let newbrandText = AddBrandList.innerText(n);
+  let newbrand = AddBrandList.in;
+  
+  listBrand[x] = document.getElementById("setBrand1").value;
+
+  let brandCell = newbrandText.insertCell(0);
+
+  brandCell.innerHTML = listBrand[x];
+
+  n++;
+  x++;
+}
