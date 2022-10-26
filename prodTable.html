@@ -25,10 +25,10 @@
             </a>
         </div>
     </nav>
-    <div id="clock"></div>
+    <!-- <div id="clock"></div>
     <div id="date">
         <div onload="updateDate();"></div>
-    </div>
+    </div> -->
     <!-- <script src="clock.js"></script> -->
 
     <center>
@@ -38,14 +38,15 @@
                        class="weightScreen">
                     <input type="text"
                            name="weight-screen"
-                           id="weight-screen"
-                           class="weight-screen"
+                           id="weightScreen"
+                           class="weightScreen"
                            placeholder="Tank Weight in Kg Screen">
                 </label>
 
                 <!-- Add button will turn Green every time whenb the weight get added and fed in the production table -->
                 <button class="addBtn"
-                        id="ptAddBtn">ADD</button>
+                        id="ptAddBtn"
+                        onclick="AddRow()">ADD</button>
 
                 <!-- By clicking on the Reject Button, The entries will turn red in the production table -->
                 <button class="reject"
@@ -59,8 +60,7 @@
 
             <div class="my-3">
                 <div>
-                    <div
-                         onload="updateClock(); setInterval('updateClock()', 1000), updateDate(); setInterval('updateDate()',10000)">
+                    <div>
                         <input type="text"
                                name=""
                                id="print-op-name"
@@ -71,20 +71,27 @@
                                id="print-op-shift"
                                placeholder="Shift"
                                disabled>
-                               <div id="clock"></div>
-                        <input type="text"
+                        <div class="dateClock"
+                             onload="updateClock(); setInterval('updateClock()', 1000), updateDate(); setInterval('updateDate()',10000)">
+                            <div id="clock"
+                                 onload="updateClock();"></div>
+                            <!-- <input type="text"
                                name=""
                                id="date"
                                onload="updateDate();"
-                               placeholder="Date">
-                               <div id="date"><div onload="updateDate();"></div></div>
-                                
-                            
-                        <input type="text"
+                               placeholder="Date"> -->
+                            <div id="date"
+                                 onload="updateDate();"></div>
+                            <!-- <input type="text"
                                name=""
                                id="clock"
                                placeholder="Time"
-                               onload="updateClock();">
+                               onload="updateClock();"> -->
+                        </div>
+
+
+
+
                     </div>
                     <div class="my-2">
                         <input type="text"
@@ -114,36 +121,17 @@
                      id="productionTable">
                     <br>
                     <table border="2"
+                           id="ptTable"
                            class="table table-success table-striped">
 
                         <thead>
                             <tr>
-                                <th scope="col">#</th>
+                                <th scope="col" id="sName">#</th>
                                 <th scope="col">UBIN</th>
                                 <th scope="col">Tank Weight</th>
                                 <th scope="col">Time</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
                     </table>
                 </div>
 

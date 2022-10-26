@@ -1,4 +1,5 @@
 .table{
+    
     background-color: beige;
     padding: auto;
     margin-top: auto;
@@ -15,4 +16,9 @@ input{
 .weight-screen{
     width: auto;
     height: 4em;
+}
+
+.dateClock{
+    display: grid;
+    grid-template-columns: 10em 10em;
 }
