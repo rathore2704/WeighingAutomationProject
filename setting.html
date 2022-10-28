@@ -12,6 +12,16 @@
           rel="stylesheet"
           integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
           crossorigin="anonymous">
+    <style>
+        .setting {
+            background-color: brown;
+            width: fit-content;
+            border: grey solid 3px;
+            display: grid;
+            grid-template-columns: 100px 100px 200px 100px;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -23,7 +33,7 @@
             </a>
         </div>
     </nav>
-    <div class="my-4 mx-4">
+    <div class="my-4 mx-4 setting">
         <div class="my-4">
             <input type="submit"
                    value="Set Header"
@@ -56,29 +66,29 @@
     <script>
 
         let headerBtn = document.getElementById("headerBtn");
-        headerBtn.addEventListener('click',()=>{
+        headerBtn.addEventListener('click', () => {
             window.location.replace('header.html');
             return true;
         })
 
         let footerBtn = document.getElementById("footerBtn");
-        footerBtn.addEventListener('click',()=>{
+        footerBtn.addEventListener('click', () => {
             window.location.replace('footer.html');
             return true;
         })
 
         let productionEntriesBtn = document.getElementById("productionEntriesBtn");
-        productionEntriesBtn.addEventListener('click',()=>{
+        productionEntriesBtn.addEventListener('click', () => {
             window.location.replace('setProdEntries.html');
             return true;
         })
 
         let hfpBackBtn = document.getElementById('hfpBackBtn');
-        hfpBackBtn.addEventListener('click', ()=>{
+        hfpBackBtn.addEventListener('click', () => {
             window.location.replace('adminPortal.html')
         })
 
-        
+
         //  function opap() {
         //                                 let selectValue = document.querySelector('input[name = operatorAdminPanel]:checked').value;
         //                                 console.log(`Selected Value ${selectValue}`);

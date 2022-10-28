@@ -327,7 +327,8 @@ addShifts.addEventListener('click', () => {
   // convert the shiftsString to DOM node
   let shiftsParamElement = getElementFromShiftsString(shiftsString)
   paramsShifts.appendChild(shiftsParamElement)
-  console.log(shiftsParamElement)
+  console.log(shiftsParamElement);
+  
   // add an eventListner to delete all the Shifts elements on clicking -button
   let deleteShifts = document.getElementsByClassName('deleteShifts')
   for (item of deleteShifts) {
@@ -338,26 +339,32 @@ addShifts.addEventListener('click', () => {
   addedShiftsCount++
 })
 
+
 let setProdEntriesBackBtn = document.getElementById('setProdEntriesBackBtn');
 setProdEntriesBackBtn.addEventListener('click', ()=>{
    window.location.replace('setting.html')
 })
 
-let listBrand = [];
-let n = 1;
-let x = 0;
 
-function AddBrandList(){
-  let AddBrandList = document.getElementById("saveBrand");
-  let newbrandText = AddBrandList.innerText(n);
-  let newbrand = AddBrandList.in;
+
+// let listBrand = [];
+// let n = 1;
+// let x = 0;
+
+// function AddBrandList(){
+//   let AddBrandList = document.getElementById("saveBrand");
+//   let newbrandText = AddBrandList.innerText(n);
+//   let newbrand = AddBrandList.in;
   
-  listBrand[x] = document.getElementById("setBrand1").value;
+//   listBrand[x] = document.getElementById("setBrand1").value;
 
-  let brandCell = newbrandText.insertCell(0);
+//   let brandCell = newbrandText.insertCell(0);
 
-  brandCell.innerHTML = listBrand[x];
+//   brandCell.innerHTML = listBrand[x];
 
-  n++;
-  x++;
-}
+//   n++;
+//   x++;
+// }
+
+let operatorPresent = document.getElementById('operatorPresent')
+

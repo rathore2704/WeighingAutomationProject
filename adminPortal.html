@@ -23,6 +23,19 @@
             align-self: center;
             align-items: flex-end;
             padding: 3px;
+            
+
+        }
+        .utt{
+            border: black 10em;
+        }
+
+        .seCoBa{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
         }
     </style>
 </head>
@@ -43,8 +56,9 @@
                     <h1>Welcome To Admin Portal</h1>
                 </div>
                 <!-- production sheet table screen monitoring via admin computer on company server -->
-                <div>
-                    <table border="2" class="table table-success table-striped">
+                <div >
+                    <table border = "2" 
+                           class="table table-success table-striped">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
@@ -76,20 +90,22 @@
                     </table>
                 </div>
             </div>
-            <div class="my-3">
-                <input type="submit"
-                       value="Setting"
-                       id="adminPortalsetting">
-            </div>
-            <div class="my-3">
-                <input type="submit"
-                       value="Correction"
-                       id="correctionBtn">
-            </div>
-            <div class="my-3">
-                <input type="submit"
-                       value="Back"
-                       id="apBackBtn">
+            <div class="seCoBa">
+                <div class="my-3">
+                    <input type="submit"
+                           value="Setting"
+                           id="adminPortalsetting">
+                </div>
+                <div class="my-3">
+                    <input type="submit"
+                           value="Correction"
+                           id="correctionBtn">
+                </div>
+                <div class="my-3">
+                    <input type="submit"
+                           value="Back"
+                           id="apBackBtn">
+                </div>
             </div>
         </div>
     </center>

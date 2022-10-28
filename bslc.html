@@ -50,6 +50,14 @@
                         border-radius: .3em;
                         height: 2.3em;
                 }
+
+                /* .osdMain{
+                        display:flex;
+                        align-items: center;
+                        justify-items: center;
+                        
+                        
+                } */
         </style>
 </head>
 <!-- BSLC- Brand Size Layer Color -->
@@ -68,20 +76,20 @@
         <center>
                 <div class="op-sh-dt mx-4 my-3">
                         <div class="mx-3 my-4 osd">
-                                <div>
+                                <div class="osdMain">
                                         <label action="#"> Operator Name:
                                                 <select name="operator-name"
                                                         id="operator-name"
                                                         class="form-select"
                                                         aria-label="Default select example">
-                                                        <option value="operator-present">operator present</option>
+                                                        <option value="operator-present" id="operatorPresent">operator present</option>
                                                         <option value="operator-1">operator-1</option>
                                                         <option value="operator-2">operator-2</option>
                                                         <option value="operator-3">operator-3</option>
                                                 </select>
                                         </label>
                                 </div>
-                                <div>
+                                <div class="osdMain">
                                         <label action="#">
                                                 Shift: <input type="text"
                                                        class="inputOsd"
