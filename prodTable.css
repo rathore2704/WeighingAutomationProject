@@ -1,24 +1,43 @@
-.table{
-    
+/* .table {
+
     background-color: beige;
     padding: auto;
     margin-top: auto;
     vertical-align: auto;
-    width: 80em;
-    height: max-content;
+   
     align-self: center;
     align-items: flex-end;
     padding: 3px;
+} */
+
+input {
+    height: fit-content;
+    border-radius: 0.3em;
+    width: fit-content;
+    text-align: center;
 }
-input{
-    border-radius: .3em;
-}
-.weight-screen{
+
+.weight-screen {
     width: auto;
     height: 4em;
 }
 
-.dateClock{
+.dateClock {
+    width: fit-content;
+    color: blue;
+    font-size: x-large;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
     display: grid;
-    grid-template-columns: 10em 10em;
+    grid-template-columns: 210px 200px;
+    column-gap: normal;
+    margin-left: 19em;
+    margin-top: 20px;
+}
+
+.osdtTable{
+    display: grid;
+    grid-template-columns: 250px 250px 1px;
+    column-gap: 1em;
 }
