@@ -103,7 +103,7 @@ addBrand.addEventListener('click', () => {
   // convert the element brandString to DOM node
   let brandParamElement = getElementFromBrandString(brandString)
   paramsBrand.appendChild(brandParamElement)
-  console.log(brandParamElement)
+  //console.log(brandParamElement)
   // add an eventListner to delete all the brands elements on clicking -button
   let deleteBrand = document.getElementsByClassName('deleteBrand')
   for (item of deleteBrand) {
@@ -117,7 +117,31 @@ addBrand.addEventListener('click', () => {
 let counter = 0;
 document.getElementsByClassName('row my-2')
 // if the user click on the + button of size the number of sizes get added
- addSize = document.getElementById('addSize')
+
+let brandsObj = [];
+
+const addBrandObj = (adbrob)=>{
+  adbrob.preventDefault();
+  let brandObj = {
+    brandTitle: document.getElementById("paramsBrand")
+  }
+  brandsObj.push(brandObj);
+  //document.forms[0].reset();
+  let brDiv = document.getElementById('selectBrand');
+  brDiv.textContent = JSON.stringify(brandsObj)
+  console.log(brDiv);
+}
+
+document.addEventListener('DOMContentLoaded',()=>{
+  document.getElementById('saveBrand').addEventListener('click', addBrandObj);
+  console.log(addBrand)
+})
+
+
+
+
+
+addSize = document.getElementById('addSize')
 addSize.addEventListener('click', () => {
   
   paramsSize = document.getElementById('paramsSize')
@@ -366,5 +390,5 @@ setProdEntriesBackBtn.addEventListener('click', ()=>{
 //   x++;
 // }
 
-let operatorPresent = document.getElementById('operatorPresent')
-
+let operatorPresent = document.getElementById('operatorPresent');
+    

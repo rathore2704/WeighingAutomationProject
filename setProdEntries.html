@@ -25,274 +25,274 @@
     </nav>
 
 
-    
-        <div class="mainDiv my-4 mx-4">
-            <div>
-                <fieldset class="row mb-3">
-                    <legend class="col-form-label col-sm-2 pt-0">Set Product Entries</legend>
-                    
-                    <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input"
-                                   type="radio"
-                                   name="SetProductEntries"
-                                   id="brandRadio"
-                                   value="brandValue">
-                            <label class="form-check-label"
-                                   for="brandValue">
-                                Set Brand
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input"
-                                   type="radio"
-                                   name="SetProductEntries"
-                                   id="sizeRadio"
-                                   value="sizeValue">
-                            <label class="form-check-label"
-                                   for="sizeValue">
-                                Set Size
-                            </label>
-                        </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input"
-                                   type="radio"
-                                   name="SetProductEntries"
-                                   id="layerRadio"
-                                   value="layerValue">
-                            <label class="form-check-label"
-                                   for="layerValue">
-                                Set Layer
-                            </label>
-                        </div>
+    <div class="mainDiv my-4 mx-4">
+        <div>
+            <fieldset class="row mb-3">
+                <legend class="col-form-label col-sm-2 pt-0">Set Product Entries</legend>
 
-                        <div class="form-check">
-                            <input class="form-check-input"
-                                   type="radio"
-                                   name="SetProductEntries"
-                                   id="colorRadio"
-                                   value="colorValue">
-                            <label class="form-check-label"
-                                   for="colorValue">
-                                Set Color
-                            </label>
-                        </div>
-
-
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input"
+                               type="radio"
+                               name="SetProductEntries"
+                               id="brandRadio"
+                               value="brandValue">
+                        <label class="form-check-label"
+                               for="brandValue">
+                            Set Brand
+                        </label>
                     </div>
-            
-                </fieldset>
-                <div id="brandDiv"
-                     class="setProdEntriesBox">
-                    <div id="brandBox"
-                         style="display: none;">
-
-                        <div class="row">
-                            <label for="url"
-                                   class="col-sm-2 col-form-label">Set Brand 1</label>
-                            <div class="col-md-2">
-                                <input type="text"
-                                       class="form-control"
-                                       id="setBrand1"
-                                       placeholder="Set Brand 1">
-                            </div>
-                            <button class="btn btn-primary col-md-1"
-                                    style="width:auto;"
-                                    type="submit"
-                                    id="addBrand">+</button>
-                            <button class="btn btn-secondary col-md-2 mx-2"
-                                    style="width:auto;"
-                                    type="submit"
-                                    onclick="AddBrandList()"
-                                    id="saveBrand">Save</button>
-                        </div>
-                        <div class="addedProdEntries"
-                             id="paramsBrand"></div>
+                    <div class="form-check">
+                        <input class="form-check-input"
+                               type="radio"
+                               name="SetProductEntries"
+                               id="sizeRadio"
+                               value="sizeValue">
+                        <label class="form-check-label"
+                               for="sizeValue">
+                            Set Size
+                        </label>
                     </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input"
+                               type="radio"
+                               name="SetProductEntries"
+                               id="layerRadio"
+                               value="layerValue">
+                        <label class="form-check-label"
+                               for="layerValue">
+                            Set Layer
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input"
+                               type="radio"
+                               name="SetProductEntries"
+                               id="colorRadio"
+                               value="colorValue">
+                        <label class="form-check-label"
+                               for="colorValue">
+                            Set Color
+                        </label>
+                    </div>
+
 
                 </div>
-                <div id="sizeDiv"
-                     class="setProdEntriesBox">
-                    <div id="sizeBox"
-                         style="display: none;">
-                        <div class="row">
-                            <label for="url"
-                                   class="col-sm-2 col-form-label">Set Size 1</label>
-                            <div class="col-md-2">
-                                <input type="text"
-                                       class="form-control"
-                                       id="setSize1"
-                                       placeholder="Set Size Name 1">
-                            </div>
-                            <button class="btn btn-primary col-md-1"
-                                    style="width:auto;"
-                                    id="addSize">+</button>
-                            <button class="btn btn-secondary col-md-2 mx-2"
-                                    style="width:auto;"
-                                    id="saveSize">Save</button>
+
+            </fieldset>
+            <div id="brandDiv"
+                 class="setProdEntriesBox">
+                <div id="brandBox"
+                     style="display: none;">
+
+                    <div class="row">
+                        <label for="url"
+                               class="col-sm-2 col-form-label">Set Brand 1</label>
+                        <div class="col-md-2">
+                            <input type="text"
+                                   class="form-control"
+                                   id="setBrand1"
+                                   placeholder="Set Brand 1">
                         </div>
+                        <button class="btn btn-primary col-md-1"
+                                style="width:auto;"
+                                type="submit"
+                                id="addBrand">+</button>
+                        <button class="btn btn-secondary col-md-2 mx-2"
+                                style="width:auto;"
+                                type="submit"
+                                onclick="AddBrandList()"
+                                id="saveBrand">Save</button>
                     </div>
                     <div class="addedProdEntries"
-                         id="paramsSize"></div>
+                         id="paramsBrand"></div>
                 </div>
-                <div id="layerDiv"
-                     class="setProdEntriesBox">
-                    <div id="layerBox"
-                         style="display: none;">
-                        <div class="row">
-                            <label for="url"
-                                   class="col-sm-2 col-form-label">Set Layer 1</label>
-                            <div class="col-md-2">
-                                <input type="text"
-                                       class="form-control"
-                                       id="setLayer1"
-                                       placeholder="Set Layer Number 1">
-                            </div>
-                            <button class="btn btn-primary col-md-1"
-                                    style="width:auto;"
-                                    id="addLayer">+</button>
-                            <button class="btn btn-secondary col-md-2 mx-2"
-                                    style="width:auto;"
-                                    id="saveLayer">Save</button>
-                        </div>
-                    </div>
-                    <div class="addedProdEntries"
-                         id="paramsLayer"></div>
-                </div>
-                <div id="colorDiv"
-                     class="setProdEntriesBox">
-                    <div id="colorBox"
-                         style="display: none;">
-                        <div class="row">
-                            <label for="url"
-                                   class="col-sm-2 col-form-label">Set Color Type 1</label>
-                            <div class="col-md-2">
-                                <input type="text"
-                                       class="form-control"
-                                       id="setColor1"
-                                       placeholder="Set Color type 1">
-                            </div>
-                            <button class="btn btn-primary col-md-1"
-                                    style="width:auto;"
-                                    id="addColor">+</button>
-                            <button class="btn btn-secondary col-md-2 mx-2"
-                                    style="width:auto;"
-                                    id="saveColor">Save</button>
-                        </div>
-                    </div>
-                    <div class="addedProdEntries"
-                         id="paramsColor"></div>
-                </div>
+
             </div>
-
-
-            <div class="my-5">
-
-                <div id="setUbinDiv"
-                     class="setProdEntriesBox">
-                    <div id="setUbinBox">
-                        <div class="row">
-                            <label for="url"
-                                   class="col-sm-2 col-form-label">Set Unique Batch ID Number</label>
-                            <div class="col-md-2">
-                                <input type="text"
-                                       class="form-control"
-                                       id="setUBIN"
-                                       placeholder="Set Unique Batch Id Number">
-                            </div>
-                            <button class="btn btn-secondary col-md-1 mx-2"
-                                    style="width:auto;"
-                                    id="saveUbin">Save</button>
+            <div id="sizeDiv"
+                 class="setProdEntriesBox">
+                <div id="sizeBox"
+                     style="display: none;">
+                    <div class="row">
+                        <label for="url"
+                               class="col-sm-2 col-form-label">Set Size 1</label>
+                        <div class="col-md-2">
+                            <input type="text"
+                                   class="form-control"
+                                   id="setSize1"
+                                   placeholder="Set Size Name 1">
                         </div>
+                        <button class="btn btn-primary col-md-1"
+                                style="width:auto;"
+                                id="addSize">+</button>
+                        <button class="btn btn-secondary col-md-2 mx-2"
+                                style="width:auto;"
+                                id="saveSize">Save</button>
                     </div>
-                    <div id="paramsSize"></div>
                 </div>
-                <fieldset class="row mb-3 my-4">
-                    <legend class="col-form-label col-sm-2 pt-0">Set Operator & Shift</legend>
-                    <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input"
-                                   type="radio"
-                                   name="SetProductEntries"
-                                   id="operatorsRadio"
-                                   value="operatorsValue">
-                            <label class="form-check-label"
-                                   for="operatorsValue">
-                                Set Operators Names
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input"
-                                   type="radio"
-                                   name="SetProductEntries"
-                                   id="shiftsRadio"
-                                   value="shiftsValue">
-                            <label class="form-check-label"
-                                   for="shiftsValue">
-                                Set Shifts
-                            </label>
-                        </div>
-                </fieldset>
-
-                <div id="operatorsDiv"
-                     class="setProdEntriesBox">
-                    <div id="operatorsBox"
-                         style="display: none;">
-                        <div class="row">
-                            <label for="url"
-                                   class="col-sm-2 col-form-label">Set Operators Name 1</label>
-                            <div class="col-md-2">
-                                <input type="text"
-                                       class="form-control"
-                                       id="setOperators1"
-                                       placeholder="Set Operators1">
-                            </div>
-                            <button class="btn btn-primary col-md-1"
-                                    style="width:auto;"
-                                    id="addOperators">+</button>
-                            <button class="btn btn-secondary col-md-1 mx-2"
-                                    style="width:auto;"
-                                    id="saveOperators">Save</button>
-                        </div>
-                    </div>
-                    <div id="paramsOperators"></div>
-                </div>
-
-                <div id="shiftsDiv"
-                     class="setProdEntriesBox">
-                    <div id="shiftsBox"
-                         style="display: none;">
-                        <div class="row">
-                            <label for="url"
-                                   class="col-sm-2 col-form-label">Set Shifts</label>
-                            <div class="col-md-2">
-                                <input type="text"
-                                       class="form-control"
-                                       id="setShifts"
-                                       placeholder="Set Shifts">
-                            </div>
-                            <button class="btn btn-primary col-md-1"
-                                    style="width:auto;"
-                                    id="addShifts">+</button>
-                            <button class="btn btn-secondary col-md-1 mx-2"
-                                    style="width:auto;"
-                                    id="saveOperators">Save</button>
-                        </div>
-                    </div>
-                    <div id="paramsShifts"></div>
-                </div>
+                <div class="addedProdEntries"
+                     id="paramsSize"></div>
             </div>
-            <hr>
-
-            <div class="my-3">
-                <input type="submit"
-                       value="Back"
-                       id="setProdEntriesBackBtn">
+            <div id="layerDiv"
+                 class="setProdEntriesBox">
+                <div id="layerBox"
+                     style="display: none;">
+                    <div class="row">
+                        <label for="url"
+                               class="col-sm-2 col-form-label">Set Layer 1</label>
+                        <div class="col-md-2">
+                            <input type="text"
+                                   class="form-control"
+                                   id="setLayer1"
+                                   placeholder="Set Layer Number 1">
+                        </div>
+                        <button class="btn btn-primary col-md-1"
+                                style="width:auto;"
+                                id="addLayer">+</button>
+                        <button class="btn btn-secondary col-md-2 mx-2"
+                                style="width:auto;"
+                                id="saveLayer">Save</button>
+                    </div>
+                </div>
+                <div class="addedProdEntries"
+                     id="paramsLayer"></div>
             </div>
-
+            <div id="colorDiv"
+                 class="setProdEntriesBox">
+                <div id="colorBox"
+                     style="display: none;">
+                    <div class="row">
+                        <label for="url"
+                               class="col-sm-2 col-form-label">Set Color Type 1</label>
+                        <div class="col-md-2">
+                            <input type="text"
+                                   class="form-control"
+                                   id="setColor1"
+                                   placeholder="Set Color type 1">
+                        </div>
+                        <button class="btn btn-primary col-md-1"
+                                style="width:auto;"
+                                id="addColor">+</button>
+                        <button class="btn btn-secondary col-md-2 mx-2"
+                                style="width:auto;"
+                                id="saveColor">Save</button>
+                    </div>
+                </div>
+                <div class="addedProdEntries"
+                     id="paramsColor"></div>
+            </div>
         </div>
-    
+
+
+        <div class="my-5">
+
+            <div id="setUbinDiv"
+                 class="setProdEntriesBox">
+                <div id="setUbinBox">
+                    <div class="row">
+                        <label for="url"
+                               class="col-sm-2 col-form-label">Set Unique Batch ID Number</label>
+                        <div class="col-md-2">
+                            <input type="text"
+                                   class="form-control"
+                                   id="setUBIN"
+                                   placeholder="Set Unique Batch Id Number">
+                        </div>
+                        <button class="btn btn-secondary col-md-1 mx-2"
+                                style="width:auto;"
+                                id="saveUbin">Save</button>
+                    </div>
+                </div>
+                <div id="paramsSize"></div>
+            </div>
+            <fieldset class="row mb-3 my-4">
+                <legend class="col-form-label col-sm-2 pt-0">Set Operator & Shift</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input"
+                               type="radio"
+                               name="SetProductEntries"
+                               id="operatorsRadio"
+                               value="operatorsValue">
+                        <label class="form-check-label"
+                               for="operatorsValue">
+                            Set Operators Names
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input"
+                               type="radio"
+                               name="SetProductEntries"
+                               id="shiftsRadio"
+                               value="shiftsValue">
+                        <label class="form-check-label"
+                               for="shiftsValue">
+                            Set Shifts
+                        </label>
+                    </div>
+            </fieldset>
+
+            <div id="operatorsDiv"
+                 class="setProdEntriesBox">
+                <div id="operatorsBox"
+                     style="display: none;">
+                    <div class="row">
+                        <label for="url"
+                               class="col-sm-2 col-form-label">Set Operators Name 1</label>
+                        <div class="col-md-2">
+                            <input type="text"
+                                   class="form-control"
+                                   id="setOperators1"
+                                   placeholder="Set Operators1">
+                        </div>
+                        <button class="btn btn-primary col-md-1"
+                                style="width:auto;"
+                                id="addOperators">+</button>
+                        <button class="btn btn-secondary col-md-1 mx-2"
+                                style="width:auto;"
+                                id="saveOperators">Save</button>
+                    </div>
+                </div>
+                <div id="paramsOperators"></div>
+            </div>
+
+            <div id="shiftsDiv"
+                 class="setProdEntriesBox">
+                <div id="shiftsBox"
+                     style="display: none;">
+                    <div class="row">
+                        <label for="url"
+                               class="col-sm-2 col-form-label">Set Shifts</label>
+                        <div class="col-md-2">
+                            <input type="text"
+                                   class="form-control"
+                                   id="setShifts"
+                                   placeholder="Set Shifts">
+                        </div>
+                        <button class="btn btn-primary col-md-1"
+                                style="width:auto;"
+                                id="addShifts">+</button>
+                        <button class="btn btn-secondary col-md-1 mx-2"
+                                style="width:auto;"
+                                id="saveOperators">Save</button>
+                    </div>
+                </div>
+                <div id="paramsShifts"></div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="my-3">
+            <input type="submit"
+                   value="Back"
+                   id="setProdEntriesBackBtn">
+        </div>
+
+    </div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
